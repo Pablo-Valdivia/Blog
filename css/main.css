@@ -1,16 +1,16 @@
 body {
     margin:0;
     padding: 0;
-    position: fixed;
+    position: fixed; /* es para que no haya scroll, abajo dejo todo en 0 */
     top:0;
     bottom: 0;
     left: 0;
     Right: 0;
 }
 a {
-    text-decoration: none;
+    text-decoration: none; /* antes estaba subrayado el texto */
     display: inline;/* para que pueda ponerse de forma horizontal */
-    color:  black;
+    color:  black; /* antes era azul */
 }
 
 header {
@@ -28,11 +28,15 @@ header .header-icons-container{
 }
 header .header-icons-container .icons{
     width: 300px;
-    height: auto;
+    height: auto; /* para uqe sea tan grande como su padre */
     display: flex;
     justify-items: flex-end;
     align-items: center;
     justify-content: space-between;
     justify-self: end;
     margin-right: 50px;
+}
+
+header .icons span{ 
+    color: white;
 }
