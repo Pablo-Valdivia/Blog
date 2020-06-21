@@ -7,6 +7,16 @@ body {
     left: 0;
     Right: 0;
 }
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/img/Cover.png);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 a {
     text-decoration: none; /* antes estaba subrayado el texto */
     display: inline;/* para que pueda ponerse de forma horizontal */
