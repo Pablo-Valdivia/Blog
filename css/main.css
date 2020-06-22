@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;500;700;900&family=Roboto:wght@400;700&display=swap');
+
 body {
+    font-family: 'Roboto mono', monospace;
     margin:0;
     padding: 0;
     position: fixed; /* es para que no haya scroll, abajo dejo todo en 0 */
@@ -8,14 +11,36 @@ body {
     Right: 0;
 }
 main{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../assets/img/Cover.png);
-    /* background-attachment: fixed; */
+    height: 100%;
+    background-image: url('../assets/img/Cover.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    justify-items: center;
+}
+
+main .main-text-container{
     
+    color: white;
+    margin-top: 130px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: 'Roboto mono', monospace;
+    
+}
+main .main-button-container .button{
+        background-color: #5cd0ad;
+        color: black;
+        height: 40px;
+        width: 110px;
+        height: 50px;
+
+        }
+main .main-button-container .button a{
+    font-weight: bold;
+    font-size: 15px;
 }
 a {
     text-decoration: none; /* antes estaba subrayado el texto */
