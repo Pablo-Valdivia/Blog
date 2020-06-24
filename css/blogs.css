@@ -10,38 +10,7 @@ body {
     left: 0;
     Right: 0;
 }
-main{
-    height: 100%;
-    background-image: url('../assets/img/Cover.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-rows:1fr 1fr;
-    justify-items: center;
-}
 
-main .main-text-container{
-    
-    color: white;
-    margin-top: 130px;
-    font-size: 25px;
-    letter-spacing: 10px;
-    font-family: 'Roboto mono', monospace;
-    
-}
-main .main-button-container .button{
-        background-color: #5cd0ad;
-        color: black;
-        height: 40px;
-        width: 110px;
-        height: 50px;
-
-        }
-main .main-button-container .button a{
-    font-weight: bold;
-    font-size: 15px;
-}
 a {
     text-decoration: none; /* antes estaba subrayado el texto */
     display: inline;/* para que pueda ponerse de forma horizontal */
@@ -99,4 +68,10 @@ nav .profile-link{
 nav .profile-link a{
     color: black;
     border-bottom: 1px solid black;
+}
+
+main .blogs-new-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
