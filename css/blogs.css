@@ -70,8 +70,34 @@ nav .profile-link a{
     border-bottom: 1px solid black;
 }
 
-main .blogs-new-container {
+.blogs-main{
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+}
+.blogs-new-container{
+
+    background-color: #e6e9ed;
+    padding: 0 50px 40px; /* 0 arriba, 50 izq der, 40 abajo */
+    
+  
+}
+.blogs-main-new{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+    /* grid-auto-rows : 500px;  */
+}
+.blogs-news-img-container{
+    grid-column: 1;
+    
+}
+.blogs-news-img-container img{
+
+}
+.blogs-news-info-container{
+    grid-column: 2;
+}
+.blogs-news-info-container p{
+    margin-bottom: 35px;
+
 }
