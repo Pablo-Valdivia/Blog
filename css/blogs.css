@@ -4,17 +4,17 @@ body {
     font-family: 'Roboto mono', monospace;
     margin: 0; /*  margen que hay desde un elemento hasta los que tenga al lado. */
     padding: 0; /* espacio que hay entre el borde de la capa y lo que tenga dentro. */
-    position: fixed; /* es para que no haya scroll, abajo dejo todo en 0 */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    Right: 0;
 }
 
 a {
     text-decoration: none; /* antes estaba subrayado el texto */
     display: inline;/* para que pueda ponerse de forma horizontal */
     color:  black; /* antes era azul */
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: auto; /* si hay mucho espacio q divida ese espacio entre left right, asi no quede uno mas grande */
 }
 
 header {
@@ -74,7 +74,7 @@ nav .profile-link a{
 
     display: grid;
 }
-.blogs-new-container{
+.blogs-news-container{
 
     background-color: #e6e9ed;
     padding: 0 50px 40px; /* 0 arriba, 50 izq der, 40 abajo */
@@ -85,13 +85,15 @@ nav .profile-link a{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
-    /* grid-auto-rows : 500px;  */
+    /* grid-auto-rows : 500px; es el tamaño de la nueva fila */
 }
 .blogs-news-img-container{
-    grid-column: 1;
+    grid-column: 1; /*esto hace que que se creen 4 grillas, ya que parte en la segunda fila. */
     
 }
 .blogs-news-img-container img{
+
+width: 85%;
 
 }
 .blogs-news-info-container{
@@ -100,4 +102,42 @@ nav .profile-link a{
 .blogs-news-info-container p{
     margin-bottom: 35px;
 
+}
+
+.blogs-posts-container {
+    padding: 0 50px 40px;
+}
+.blogs-posts-container h3 {
+    border-bottom: 1px solid #cdd2da;  /* https://www.w3schools.com/css/css_border.asp */
+    padding-bottom: 20px;
+    text-align: center;
+}
+.blogs-button {
+    border: 1px solid #47cfac;
+    padding: 10px 15px; /* 10 arriba abajo, 15 izq der*/
+    font-size: 12px;  
+}
+
+.blogs-posts-container .post-container {
+    display: inline-block; /* por defcto article viene como block, inline-block es para que se pueda poner de forma horizontal  w3schools.com/cssref/tryit.asp?filename=trycss_display */
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px; 
+}
+.blogs-posts-container .post-container p {
+    margin-bottom: 35px;
+}
+.blogs-posts-container .post-container img {
+    width: 100%; /* 100 xq ya le pusimos dimension a su padre */
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid #47cfac;
+    text-align: center;
+}
+footer p {
+    color: white;
+    margin-top: 30px;
 }
