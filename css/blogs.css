@@ -141,3 +141,24 @@ footer p {
     color: white;
     margin-top: 30px;
 }
+
+.blogs-main{
+    display:grid;
+}
+
+.blog-img-container {
+    padding: 0 50px 40px ;
+}
+.blog-img-container img{
+
+    width: 100%;
+}
+.blog-article-container{
+/* text-align: center; */
+padding: 0 300px 40px;
+
+}
+.blog-article-container p{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
